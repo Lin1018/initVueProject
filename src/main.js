@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from '@/api/http'
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
 // rem适配
 import 'lib-flexible/flexible.js'
+
+Vue.prototype.$axios = axios
 
 Vue.use(Mint)
 

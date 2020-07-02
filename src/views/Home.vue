@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h3>项目初始化</h3>
     <h3>{{ msg }}</h3>
     <mt-button type="primary" @click="$router.push('/test')">To test</mt-button>
@@ -8,17 +8,30 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
-      msg: 'vue + mint-ui + scss + rem'
+      msg: 'vue + axios + mint-ui + scss + rem'
+    }
+  },
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    getData() {
+      this.$axios({
+        url: 'getlunbo',
+        method: 'get',
+      }).then(res => {
+        console.log(res)
+      })
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .hello {
+  .home {
     text-align: center;
     font-size: 20px;
   }
