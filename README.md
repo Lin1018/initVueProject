@@ -1,6 +1,6 @@
-# 1847-live-mini
+# vue init project
 
-> A Vue.js project
+> 技术栈： vue + mint-ui + scss + rem
 
 ## Build Setup
 
