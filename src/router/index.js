@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/views/HelloWorld'
+import Home from '@/views/Home'
 import Test from '@/views/Test'
 
 Vue.use(Router)
@@ -9,8 +9,8 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      name: 'Home',
+      component: Home,
       meta: {
         keepAlive: true
       }
