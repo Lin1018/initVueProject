@@ -3,7 +3,7 @@
 > 技术栈： vue + mint-ui + scss + rem
 
 ## 介绍
-仅为了用与构建新项目时，避免搭建项目的重复操作。
+Vue移动端项目初始化架构。
 
 ## Build Setup
 
